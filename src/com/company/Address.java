@@ -17,6 +17,11 @@ public class Address {
         return house;
     }
 
+    @Override
+    public String toString() {
+        return  "Город - " + city + '\n' + "Улица - " + street + '\n' + "Дом - " + house;
+    }
+
     public Address(String city, String street, int house) {
         this.city = city;
         this.street = street;
